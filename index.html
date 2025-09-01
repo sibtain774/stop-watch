@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 p-8 rounded shadow text-center space-y-6">
+        <h1 class="text-4xl font-bold">Stopwatch</h1>
+
+        <div class="text-6xl font-mono">
+            <span id="min"></span>:<span id="sec"></span>:<span id="mili"></span>
+        </div>
+
+        <div class="space-x-4">
+            <button onclick="start()" class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded">Start</button>
+            <button onclick="pause()" class="bg-yellow-500 hover:bg-yellow-600 px-6 py-2 rounded">Stop</button>
+            <button onclick="reset()" class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded">Reset</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
